@@ -1,6 +1,6 @@
 apt update && apt upgrade
 apt install curl git
-apt install autoconf bison clang coreutils curl findutils git apr apr-util libffi-dev libgmp-dev libpcap-dev \ postgresql-dev readline-dev libsqlite-devopenssl-dev libtool libxml2-dev libxslt-dev ncurses-dev pkg-config \ postgresql-contrib wget make ruby-dev libgrpc-dev termux-tools ncurses ncurses-utils libsodium-dev
+apt install autoconf bison clang coreutils curl findutils git apr apr-util libffi-dev libgmp-dev libpcap-dev \ postgresql-dev readline-dev libsqlite-dev openssl-dev libtool libxml2-dev libxslt-dev ncurses-dev pkg-config \ postgresql-contrib wget make ruby-dev libgrpc-dev termux-tools ncurses ncurses-utils libsodium-dev
 curl -L https://github.com/rapid7/metasploit-framework/archive/4.16.2.tar.gz | tar xz cd metasploit-framework-4.16.2 sed 's|git ls-files|find -type f|' -i metasploit-framework.gemspec
 sed 's/rb-readline (0.5.5)/rb-readline /g' -i Gemfile.lock sed 's/rb-readline/rb-readline (= 0.5.5)/g' -i Gemfile.lock
 gem install bundler
